@@ -3,11 +3,11 @@ include '../component/sidebar.php'
 
 ?>
 
-<div class="container p-3 m-4 h-100" style="background-color: #FFFFFF; border-top: 5px
+<div class="container p-3 m-4 h-100" style="background-color: white; border-top: 5px
 solid #D40013; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0,
 0.19);">
     <div class="body d-flex justify-content-between">
-        <h4>LIST MOVIE</h4>
+        <h4>List Movie</h4>
     </div>
     <hr>
     
@@ -39,7 +39,7 @@ solid #D40013; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 
 <td>' . $data['realese'] . '</td>
 <td>' . $data['season'] . '</td>
 <td>
-<a href="../page/editMoviePage.php?id=' . $data ['id'] . '" onClick="return confirm ( \'Are you sure want to update this data?\')"><i style="color:green" class="fa-solid fa-pen-to-square fa-2x"></i>
+<a href="../page/editMoviePage.php?id=' . $data ['id'] . '" onClick="return confirm ( \'Are you sure want to update this data?\')"><i style="color:black" class="fa-solid fa-pen-to-square fa-2x"></i>
 </a>
 <a href="../process/deleteMovieProcess.php?id=' . $data ['id'] . '" onClick="return confirm ( \'Are you sure want to delete this data?\')"><i style="color: red" class="fa fa-trash fa-2x"></i>
 </a>
