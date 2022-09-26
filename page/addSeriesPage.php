@@ -35,9 +35,9 @@ solid #D40013; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 
     </div>
   </div>
   <div class="row mb-3">
-    <label for="release" class="col-sm-2 col-form-label">Realease</label>
+    <label for="realease" class="col-sm-2 col-form-label">Realease</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" id="realese" name="realese" placeholder="release">
+      <input type="text" class="form-control" id="realease" name="realease" placeholder="realease">
     </div>
   </div>
   <div class="row mb-3">

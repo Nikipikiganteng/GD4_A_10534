@@ -5,14 +5,14 @@ if (isset($_POST['editseries'])) {
     $id=$_REQUEST['id'];
         $name = $_POST['name'];
         $genre = $_POST['genre'];
-        $realese = $_POST['realese'];
+        $realease = $_POST['realease'];
         $episode = $_POST['episode'];
         $season = $_POST['season'];
         $synopsis = $_POST['synopsis'];
-    if(empty($name) OR empty($genre) OR empty($realese) OR empty($season) OR empty($synopsis) OR empty($episode)){
+    if(empty($name) OR empty($genre) OR empty($realease) OR empty($season) OR empty($synopsis) OR empty($episode)){
         echo
             '<script>
-        alert("Edit Series Failed --> EMPTY INPUT");
+        alert("Edit Series Failed --> SEMUA DATA HARUS DIUBAH");
         window.location = "../page/listSeriesPage.php"
         </script>';
     }else{ 
@@ -24,7 +24,7 @@ if (isset($_POST['editseries'])) {
         }
         $query = mysqli_query(
             $con,
-            "UPDATE series SET name = '".$name."', genre = '".$str."', realese = '".$realese."',episode = '".$episode."', synopsis = '".$synopsis."' WHERE id  = ".$id.""
+            "UPDATE series SET name = '".$name."', genre = '".$str."', realease = '".$realease."',episode = '".$episode."', synopsis = '".$synopsis."' WHERE id  = ".$id.""
         )
             or die(mysqli_error($con));
         if ($query) {

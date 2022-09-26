@@ -32,7 +32,7 @@ solid #D40013; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 
   <div class="row mb-3">
     <label for="inputEmail3" class="col-sm-2 col-form-label">Realease</label>
     <div class="col-sm-3">
-      <input type="text" class="form-control" id="inputEmail3" value="<?php echo $row['realese']?>" readonly>
+      <input type="text" class="form-control" id="inputEmail3" value="<?php echo $row['realease']?>" readonly>
     </div>
   </div>
   <div class="row mb-3">
@@ -83,7 +83,7 @@ solid #D40013; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 
 </div>
 <div class="mb-3">
     <label for="formGroupExampleInput" class="form-label">Release</label>
-    <input name="realese" type="text" class="form-control" id="formGroupExampleInput" placeholder="<?php echo $row['realese']?>" >
+    <input name="realease" type="text" class="form-control" id="formGroupExampleInput" placeholder="<?php echo $row['realease']?>" >
 </div>
 <div class="mb-3">
     <label for="formGroupExampleInput" class="form-label">Episode</label>

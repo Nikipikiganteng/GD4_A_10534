@@ -3,13 +3,13 @@ if (isset($_POST['addseries'])) {
     include('../db.php');
     $name = $_POST['name'];
     $genre = $_POST['genre'];
-    $realese = $_POST['realese'];
+    $realease = $_POST['realease'];
     $episode = $_POST['episode'];
     $season = $_POST['season'];
     $synopsis = $_POST['synopsis'];
     
 
-    if(empty($name) OR empty($genre) OR empty($realese)  OR empty($episode) OR empty($season) OR empty($synopsis)){
+    if(empty($name) OR empty($genre) OR empty($realease)  OR empty($episode) OR empty($season) OR empty($synopsis)){
         echo
             '<script>
         alert("Add Series Failed --> EMPTY INPUT");
@@ -24,9 +24,9 @@ if (isset($_POST['addseries'])) {
         }
         $query = mysqli_query(
             $con,
-            "INSERT INTO series(name, genre, realese, episode, season, synopsis)
+            "INSERT INTO series(name, genre, realease, episode, season, synopsis)
         VALUES
-        ('$name', '$str', '$realese','$episode', '$season', '$synopsis')"
+        ('$name', '$str', '$realease','$episode', '$season', '$synopsis')"
         )
             or die(mysqli_error($con));
         if ($query) {
